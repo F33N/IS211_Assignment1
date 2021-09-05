@@ -1,11 +1,18 @@
-
 class Book:
-    def __init__(self, author, title):
-        pass
-    
+
+    title = ""
+    author = ""
+
+    def __init__(self, titleName, authorName):
+        self.title = titleName
+        self.author = authorName
+
     def display(self):
-        pass
+        print(f"\'{self.title}\', written by {self.author}")
 
 
-if __name__ == "__main__":
-    pass
+obj1 = Book("Of Mice and Men", "John Stienbeck")
+obj2 = Book("To Kill a Mockingird", "Harper Lee")
+
+obj1.display()
+obj2.display()
